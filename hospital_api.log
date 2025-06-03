@@ -74,3 +74,56 @@
 2025-06-03 07:29:44,001 - INFO - 127.0.0.1 - - [03/Jun/2025 07:29:44] "PUT /api/appointments/1 HTTP/1.1" 200 -
 2025-06-03 07:29:44,263 - INFO - Operation: GET_ALL | User Type: APPOINTMENT | Data: {'count': 3}
 2025-06-03 07:29:44,265 - INFO - 127.0.0.1 - - [03/Jun/2025 07:29:44] "GET /api/appointments HTTP/1.1" 200 -
+2025-06-03 07:36:05,517 - INFO - Operation: GET_STATS | User Type: DASHBOARD | Data: {'total_patients': 4, 'total_doctors': 7, 'total_admins': 3, 'today_appointments': 1, 'total_appointments': 3}
+2025-06-03 07:36:05,519 - INFO - 127.0.0.1 - - [03/Jun/2025 07:36:05] "GET /api/dashboard/stats HTTP/1.1" 200 -
+2025-06-03 07:36:05,786 - INFO - Operation: GET_STATS | User Type: DASHBOARD | Data: {'total_patients': 4, 'total_doctors': 7, 'total_admins': 3, 'today_appointments': 1, 'total_appointments': 3}
+2025-06-03 07:36:05,788 - INFO - 127.0.0.1 - - [03/Jun/2025 07:36:05] "GET /api/dashboard/stats HTTP/1.1" 200 -
+2025-06-03 07:36:16,573 - INFO - Operation: LOGOUT | User Type: None | Data: {'username': None, 'user_type': None}
+2025-06-03 07:36:16,574 - INFO - 127.0.0.1 - - [03/Jun/2025 07:36:16] "POST /api/logout HTTP/1.1" 200 -
+2025-06-03 07:39:47,849 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:47] "OPTIONS /api/register HTTP/1.1" 200 -
+2025-06-03 07:39:48,121 - INFO - Operation: REGISTER | User Type: ADMIN | Data: {'username': 'Bharath24', 'name': 'Bharath', 'email': 'Bharath24@gmail.com'}
+2025-06-03 07:39:48,122 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:48] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-06-03 07:39:52,880 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:52] "OPTIONS /api/login HTTP/1.1" 200 -
+2025-06-03 07:39:53,194 - INFO - Operation: LOGIN | User Type: ADMIN | Data: {'username': 'Bharath24', 'id': 4}
+2025-06-03 07:39:53,197 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:53] "POST /api/login HTTP/1.1" 200 -
+2025-06-03 07:39:53,459 - INFO - Operation: GET_STATS | User Type: DASHBOARD | Data: {'total_patients': 4, 'total_doctors': 7, 'total_admins': 4, 'today_appointments': 1, 'total_appointments': 3}
+2025-06-03 07:39:53,461 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:53] "GET /api/dashboard/stats HTTP/1.1" 200 -
+2025-06-03 07:39:53,537 - INFO - Operation: GET_STATS | User Type: DASHBOARD | Data: {'total_patients': 4, 'total_doctors': 7, 'total_admins': 4, 'today_appointments': 1, 'total_appointments': 3}
+2025-06-03 07:39:53,539 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:53] "GET /api/dashboard/stats HTTP/1.1" 200 -
+2025-06-03 07:39:55,293 - INFO - Operation: GET_ALL | User Type: APPOINTMENT | Data: {'count': 3}
+2025-06-03 07:39:55,295 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:55] "GET /api/appointments HTTP/1.1" 200 -
+2025-06-03 07:39:55,624 - INFO - Operation: GET_ALL | User Type: APPOINTMENT | Data: {'count': 3}
+2025-06-03 07:39:55,626 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:55] "GET /api/appointments HTTP/1.1" 200 -
+2025-06-03 07:39:56,828 - INFO - Operation: GET_STATS | User Type: DASHBOARD | Data: {'total_patients': 4, 'total_doctors': 7, 'total_admins': 4, 'today_appointments': 1, 'total_appointments': 3}
+2025-06-03 07:39:56,831 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:56] "GET /api/dashboard/stats HTTP/1.1" 200 -
+2025-06-03 07:39:57,161 - INFO - Operation: GET_STATS | User Type: DASHBOARD | Data: {'total_patients': 4, 'total_doctors': 7, 'total_admins': 4, 'today_appointments': 1, 'total_appointments': 3}
+2025-06-03 07:39:57,163 - INFO - 127.0.0.1 - - [03/Jun/2025 07:39:57] "GET /api/dashboard/stats HTTP/1.1" 200 -
+2025-06-03 07:40:26,026 - INFO - Operation: GET_ALL | User Type: ADMIN | Data: {'count': 4}
+2025-06-03 07:40:26,029 - INFO - 127.0.0.1 - - [03/Jun/2025 07:40:26] "GET /api/admins HTTP/1.1" 200 -
+2025-06-03 07:40:26,339 - INFO - Operation: GET_ALL | User Type: ADMIN | Data: {'count': 4}
+2025-06-03 07:40:26,341 - INFO - 127.0.0.1 - - [03/Jun/2025 07:40:26] "GET /api/admins HTTP/1.1" 200 -
+2025-06-03 07:40:56,112 - INFO - Operation: GET_ALL | User Type: DOCTOR | Data: {'count': 7}
+2025-06-03 07:40:56,114 - INFO - 127.0.0.1 - - [03/Jun/2025 07:40:56] "GET /api/doctors HTTP/1.1" 200 -
+2025-06-03 07:40:56,426 - INFO - Operation: GET_ALL | User Type: DOCTOR | Data: {'count': 7}
+2025-06-03 07:40:56,428 - INFO - 127.0.0.1 - - [03/Jun/2025 07:40:56] "GET /api/doctors HTTP/1.1" 200 -
+2025-06-03 07:41:14,295 - INFO - Operation: GET_ALL | User Type: PATIENT | Data: {'count': 4}
+2025-06-03 07:41:14,298 - INFO - 127.0.0.1 - - [03/Jun/2025 07:41:14] "GET /api/patients HTTP/1.1" 200 -
+2025-06-03 07:41:14,617 - INFO - Operation: GET_ALL | User Type: PATIENT | Data: {'count': 4}
+2025-06-03 07:41:14,619 - INFO - 127.0.0.1 - - [03/Jun/2025 07:41:14] "GET /api/patients HTTP/1.1" 200 -
+2025-06-03 07:41:31,097 - INFO - Operation: GET_ALL | User Type: APPOINTMENT | Data: {'count': 3}
+2025-06-03 07:41:31,098 - INFO - 127.0.0.1 - - [03/Jun/2025 07:41:31] "GET /api/appointments HTTP/1.1" 200 -
+2025-06-03 07:41:31,417 - INFO - Operation: GET_ALL | User Type: APPOINTMENT | Data: {'count': 3}
+2025-06-03 07:41:31,419 - INFO - 127.0.0.1 - - [03/Jun/2025 07:41:31] "GET /api/appointments HTTP/1.1" 200 -
+2025-06-03 07:42:22,190 - INFO - Operation: GET_ALL | User Type: DOCTOR | Data: {'count': 7}
+2025-06-03 07:42:22,192 - INFO - 127.0.0.1 - - [03/Jun/2025 07:42:22] "GET /api/doctors HTTP/1.1" 200 -
+2025-06-03 07:42:22,504 - INFO - Operation: GET_ALL | User Type: PATIENT | Data: {'count': 4}
+2025-06-03 07:42:22,505 - INFO - Operation: GET_ALL | User Type: DOCTOR | Data: {'count': 7}
+2025-06-03 07:42:22,506 - INFO - 127.0.0.1 - - [03/Jun/2025 07:42:22] "GET /api/patients HTTP/1.1" 200 -
+2025-06-03 07:42:22,508 - INFO - 127.0.0.1 - - [03/Jun/2025 07:42:22] "GET /api/doctors HTTP/1.1" 200 -
+2025-06-03 07:42:22,818 - INFO - Operation: GET_ALL | User Type: PATIENT | Data: {'count': 4}
+2025-06-03 07:42:22,820 - INFO - 127.0.0.1 - - [03/Jun/2025 07:42:22] "GET /api/patients HTTP/1.1" 200 -
+2025-06-03 07:43:01,985 - INFO - 127.0.0.1 - - [03/Jun/2025 07:43:01] "OPTIONS /api/appointments HTTP/1.1" 200 -
+2025-06-03 07:43:02,260 - INFO - Operation: CREATE | User Type: APPOINTMENT | Data: {'id': 4, 'patient_id': '1', 'doctor_id': '2', 'date': '2025-06-04'}
+2025-06-03 07:43:02,261 - INFO - 127.0.0.1 - - [03/Jun/2025 07:43:02] "[35m[1mPOST /api/appointments HTTP/1.1[0m" 201 -
+2025-06-03 07:43:02,305 - INFO - Operation: GET_ALL | User Type: APPOINTMENT | Data: {'count': 4}
+2025-06-03 07:43:02,306 - INFO - 127.0.0.1 - - [03/Jun/2025 07:43:02] "GET /api/appointments HTTP/1.1" 200 -

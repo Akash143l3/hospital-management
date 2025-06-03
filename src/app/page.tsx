@@ -192,13 +192,15 @@ export default function App() {
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <div
-        className={`fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform ${
+        className={`fixed inset-y-0 left-0 z-50  bg-white w-fit shadow-lg transform ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0`}
       >
-        <div className="flex items-center justify-center h-16 bg-blue-600">
+        <div className="flex items-center justify-center h-16 p-3 bg-blue-600">
           <Heart className="h-8 w-8 text-white mr-2" />
-          <span className="text-white text-xl font-bold">MediCare</span>
+          <span className="text-white w-full  text-xl font-bold">
+            Personal health records{" "}
+          </span>
         </div>
         <Navigation
           currentView={currentView}
@@ -374,7 +376,9 @@ const AuthComponent: React.FC<AuthComponentProps> = ({ onLogin }) => {
       <div className="max-w-md w-full bg-white rounded-lg shadow-xl p-8">
         <div className="text-center mb-8">
           <Heart className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-          <h2 className="text-3xl font-bold text-gray-900">MediCare</h2>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Personal health records
+          </h2>
           <p className="text-gray-600 mt-2">Hospital Management System</p>
         </div>
 
