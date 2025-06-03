@@ -60,6 +60,7 @@ interface Appointment {
   specialization: string;
   appointment_date: string;
   appointment_time: string;
+  symptoms?: string;
   status: "Scheduled" | "Completed" | "Cancelled";
   created_at: string;
 }
@@ -987,6 +988,7 @@ interface Appointment {
   specialization: string;
   appointment_date: string;
   appointment_time: string;
+  symptoms?: string;
   status: "Scheduled" | "Completed" | "Cancelled";
   created_at: string;
 }
@@ -1090,6 +1092,7 @@ const AppointmentsView: React.FC<AppointmentsViewProps> = ({ currentUser }) => {
             { key: "patient_name", label: "Patient" },
             { key: "doctor_name", label: "Doctor" },
             { key: "specialization", label: "Specialization" },
+            { key: "symptoms", label: "Symptoms" },
             {
               key: "appointment_date",
               label: "Date",
@@ -1628,6 +1631,7 @@ const AppointmentModal = ({
     doctor_id: appointment?.doctor_id || "", // You'll need to add doctor_id to your appointment interface
     appointment_date: appointment?.appointment_date || "",
     appointment_time: appointment?.appointment_time || "",
+    symptoms: appointment?.symptoms || "",
     status: appointment?.status || "Scheduled",
   });
   const [loading, setLoading] = useState(false);
@@ -1749,6 +1753,15 @@ const AppointmentModal = ({
             value={formData.appointment_time}
             onChange={(e) =>
               setFormData({ ...formData, appointment_time: e.target.value })
+            }
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+            required
+          />{" "}
+          <input
+            placeholder="Symptoms"
+            value={formData.symptoms}
+            onChange={(e) =>
+              setFormData({ ...formData, symptoms: e.target.value })
             }
             className="w-full px-4 py-2 border border-gray-300 rounded-lg"
             required
